@@ -5,7 +5,7 @@
 replicaCount: 1
 
 image:
-  repository: k3d-mycluster-registry:5000/nginx
+  repository: registry.localhost:63183/nginx
   tag: alpine
   pullPolicy: Always
   
