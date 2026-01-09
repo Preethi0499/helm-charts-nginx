@@ -5,8 +5,8 @@
 replicaCount: 1
 
 image:
-  repository: registry.localhost:63183/nginx
-  tag: alpine
+  repository: mycluster-registry:5000
+  tag: 1.0
   pullPolicy: Always
   
 restartPolicy: Never
