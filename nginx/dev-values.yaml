@@ -1,7 +1,7 @@
 replicaCount: 1
 image:
   repository: mycluster-registry:5000/nginx
-  tag: v7.0
+  tag: v8.0
   pullPolicy: Always
 restartPolicy: Never
 sleepyTime: "10"
