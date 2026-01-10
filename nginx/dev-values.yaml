@@ -1,40 +1,19 @@
-# Default values for nginx.
-# This is a YAML-formatted file.
-# Declare name/value pairs to be passed into your templates.
-
 replicaCount: 1
-
 image:
   repository: mycluster-registry:5000/nginx
-  tag: "3.0"
+  tag: v7.0
   pullPolicy: Always
-  
 restartPolicy: Never
-
-# Evaluated by the post-install hook
 sleepyTime: "10"
-
-index: >-
-  <h1>Hello</h1>
-  <p>This is a test123</p>
-
-# image:
-#   repository: nginx
-#   tag: latest
-#   pullPolicy: IfNotPresent
-
+index: <h1>Hello</h1> <p>This is a test123</p>
 service:
   annotations: {}
-  #clusterIP: ""
   externalIPs: []
   loadBalancerIP: ""
   loadBalancerSourceRanges: []
   type: ClusterIP
   port: 8888
   nodePort: ""
-
 podAnnotations: {}
-
 resources: {}
-
 nodeSelector: {}
