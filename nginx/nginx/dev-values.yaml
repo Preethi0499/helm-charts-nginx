@@ -1,3 +1,0 @@
-image:
-  tag: v6.0
-  repository: mycluster-registry:5000/nginx
